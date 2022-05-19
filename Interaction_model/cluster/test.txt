@@ -1,0 +1,23 @@
+nohup: ignoring input
+use cuda: True
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+9
+generate cell graph...
+Start pretrain
+pretrain:0
+pretrain:1
+pretrain:2
+pretrain:3
+pretrain:4
+pretrain:5

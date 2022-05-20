@@ -12,7 +12,7 @@ Start by grabbing this source codes:
 
 ```
 git clone https://github.com/JiangBioLab/DeepCCI.git
-cd scGNN
+cd DeepCCI
 ```
 
 ###  (Recommended) Use python virutal environment with conda（https://anaconda.org/）
@@ -22,7 +22,16 @@ conda create -n deepcciEnv python=3.7.4 pip
 conda activate deepcciEnv
 pip install -r requirements.txt
 ```
+and then also install the following in R:
 
+```
+conda install r-base
+R
+data = load('Rpack.Rdata')
+for (i in Rpack) install.packages()
+```
+
+### 
 ### Quick Start
 
 ### 1. Cell Cluster Model

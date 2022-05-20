@@ -280,7 +280,7 @@ if __name__ == "__main__":
     parser.add_argument('--Train_epoch', default=30, type=int)
     parser.add_argument('--n_input', default=2000, type=int)
     parser.add_argument('--pretrain_path', type=str, default='pkl')
-    parser.add_argument('--Auto', default=True)
+    parser.add_argument('--Auto', default=False)
     parser.add_argument('--pretain', default=True)
     parser.add_argument('--device', type=str, default='cuda',
                         help="Device: 'cuda' or 'cpu'")
@@ -295,8 +295,8 @@ if __name__ == "__main__":
         os.system('mkdir ./dataset/'+args.name+'/model')
 
 
-    device = = torch.device("cuda" if torch.cuda.is_available() and args.device == 'cuda' else "cpu")
-    args.Auto = False
+    device = torch.device("cuda" if torch.cuda.is_available() and args.device == 'cuda' else "cpu")
+    #args.Auto = False
     x = np.loadtxt("./dataset/"+args.name+"/data/" + args.name + ".txt", dtype=float)
     y = np.loadtxt("./dataset/"+args.name+"/data/" + args.name + "_label.txt", dtype=int)
     if args.Auto:

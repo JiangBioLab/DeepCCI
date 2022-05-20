@@ -28,7 +28,7 @@ and then also install the following in R:
 conda install r-base
 R
 data = load('Rpack.Rdata')
-for (i in Rpack) install.packages()
+install.packages(c(Rpack))
 ```
 
 ### 

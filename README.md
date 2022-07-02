@@ -22,7 +22,9 @@ conda create -n deepcciEnv python=3.7.4 pip
 conda activate deepcciEnv
 pip install -r requirements.txt
 ```
-**and then also install the following in R:**
+
+**because data processing and result visualization require R and then also install the following in R:** 
+
 ```
 conda install r-base
 R
@@ -34,7 +36,6 @@ devtools::install_github("jokergoo/circlize")
 devtools::install_github("jokergoo/ComplexHeatmap")
 devtools::install_github("sqjin/CellChat")
 devtools::install_github('satijalab/seurat-data')
-
 ```
 
 ### 

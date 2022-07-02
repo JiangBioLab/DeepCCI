@@ -27,13 +27,14 @@ pip install -r requirements.txt
 ```
 conda install r-base
 R
-install.packages("devtools")
+install.packages(‘Seurat’)
+install.packages("igraph")
 install.packages('NMF')
+install.packages("devtools")
 devtools::install_github("jokergoo/circlize")
 devtools::install_github("jokergoo/ComplexHeatmap")
 devtools::install_github("sqjin/CellChat")
-data = load('Rpack.Rdata')
-install.packages(c(Rpack))
+devtools::install_github('satijalab/seurat-data')
 
 ```
 

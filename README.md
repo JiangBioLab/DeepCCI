@@ -22,13 +22,19 @@ conda create -n deepcciEnv python=3.7.4 pip
 conda activate deepcciEnv
 pip install -r requirements.txt
 ```
-and then also install the following in R:
-
+**and then also install the following in R:
+**
 ```
 conda install r-base
 R
+install.packages("devtools")
+install.packages('NMF')
+devtools::install_github("jokergoo/circlize")
+devtools::install_github("jokergoo/ComplexHeatmap")
+devtools::install_github("sqjin/CellChat")
 data = load('Rpack.Rdata')
 install.packages(c(Rpack))
+
 ```
 
 ### 

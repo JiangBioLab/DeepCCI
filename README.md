@@ -38,7 +38,7 @@ install.packages(c(Rpack))
 
 #### **(1) Preprocess input files**
 
-The cluster model of DeepCCI accepts scRNA-seq data format: CSV and h5. The processed feature file of scRNA-seq data will be provided. Depending on the size of the scRNA-seq file，the process will take 5-10 minutes.
+The cluster model of DeepCCI accepts scRNA-seq data format: CSV and h5. The processed feature file of scRNA-seq data will be provided. Depending on the size of the scRNA-seq file，the process will take about 5-10 minutes.
 
 ##### CSV format
 
@@ -61,14 +61,14 @@ python preprocess.py --name  Quake_10x_Limb_Muscle --file_format h5
 #### (2) Cell Clustering
 The clustering results of scRNA-seq data will be output. 
 ##### With pre-train:
-It will take 25 minutes.
+It will take about 25 minutes.
 ```
 python Cluster.py --name Yan --pretain True --pretrain_epoch 50 --device cuda
 ```
 
 Without pre-train:
 The pretrained model files are in the pretain_model folder.
-It will take 5 minutes.
+It will take about 5 minutes.
 ```
 python Cluster.py --name Yan --pretain False --device cuda
 python Cluster.py --name Quake_10x_Limb_Muscle --pretain False --device cuda
@@ -79,7 +79,7 @@ python Cluster.py --name Quake_10x_Limb_Muscle --pretain False --device cuda
 #### **(1) Preprocess input files**
 
 The example test file can be download from  http://jianglab.org.cn/deepcci_download/.
-The processed feature file will be provided. Depending on the size of the scRNA-seq file，the process will take 10-20 minutes.
+The processed feature file will be provided. Depending on the size of the scRNA-seq file，the process will take about 10-20 minutes.
 
 ##### With cell-label:
 
@@ -95,7 +95,7 @@ python Feature.py --label_mode False --species Human
 ```
 
 #### (2) Interaction Inference
-The predicted interaction outfile will be provided. The predicted process will take 1-2 minutes.
+The predicted interaction outfile will be provided. The predicted process will take about 1-2 minutes.
 ```
 python Interaction_inference.py --device cuda 
 ```
@@ -103,7 +103,7 @@ python Interaction_inference.py --device cuda
 ### 3. Visualization
 
 #####
-To show the CCI output intuitively, several visualization methods are provided. The process will take 1 minutes.
+To show the CCI output intuitively, several visualization methods are provided. The process will take about 1 minutes.
 ```
 cd Plot
 python Plot.py

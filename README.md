@@ -1,6 +1,6 @@
 # DeepCCI (Deep learning framework for Cell-Cell Interactions inference from scRNA-seq data)
 
-DeepCCI is a graph convolutional network (GCN)-based deep learning framework for Cell- Cell Interactions inference from scRNA-seq data.
+DeepCCI is a graph convolutional network (GCN)-based deep learning framework for Cell-Cell Interactions inference from scRNA-seq data.
 ![workflow](https://user-images.githubusercontent.com/72069543/169433397-ff34dce1-717f-446e-8b0a-0e1b5ccf6da6.png)
 
 
@@ -108,4 +108,4 @@ python Plot.py
 
 ## Contact
 
-Feel free to submit an issue or contact us at wenyiyang22@163.com for problems about the Python package, website or database.
+Feel free to submit an issue or contact us at wenyiyang22@163.com for problems about the package.

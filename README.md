@@ -22,8 +22,7 @@ conda create -n deepcciEnv python=3.7.4 pip
 conda activate deepcciEnv
 pip install -r requirements.txt
 ```
-**and then also install the following in R:
-**
+**and then also install the following in R:**
 ```
 conda install r-base
 R

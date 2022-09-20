@@ -275,7 +275,7 @@ def graph():
     geneR = pd.read_csv(pairLRsigdata).values[:,4]
     pairname=pd.read_csv(pairLRsigdata).values[:,1]
     nLR=len(geneL)
-    data_project='./output/data_project.csv'
+    data_project='./output/data_signaling.csv'
     with open(data_project,encoding = 'gbk') as f:
         data = np.loadtxt(data_project,str,delimiter = ",",skiprows=1)[:,1:]
         data_rownames=np.loadtxt(data_project,str,delimiter = ",",skiprows=1)[:,0]

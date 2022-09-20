@@ -45,7 +45,7 @@ test <- suppressMessages(identifyOverExpressedInteractions(test))
 
 test <- suppressMessages(projectData(test, PPI.human))
 
-test <- suppressMessages(mycomputeCommunProb(test))
+test <- suppressMessages(mycomputeCommunProb(test,type = c( "truncatedMean"),trim = 0.1,nboot = 1000))
 df.net <- suppressMessages(subsetCommunication(test,thresh = 1))
 
 write.csv(test@LR$LRsig,"./output/pairLR_use.csv")

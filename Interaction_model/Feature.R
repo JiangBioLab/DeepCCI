@@ -55,4 +55,4 @@ write.csv(test@DB$complex,"./output/complex_input.csv")
 write.csv(test@DB$cofactor,"./output/cofactor.csv")
 write.csv(df.net,"./output/df_net.csv")
 write.csv(test@DB$interaction,"./output/pairLR.csv")
-
+write.csv(as.matrix(test@data.signaling),"./output/data_signaling.csv")
